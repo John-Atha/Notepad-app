@@ -16,19 +16,7 @@ class Note extends React.Component {
     console.log("deleting");
     console.log(event.target.parentNode);
     event.target.parentNode.parentNode.classList.add("disappear");
-    /*event.target.parentNode.parentNode.setState({
-      title: this.props.title,
-      text: this.props.text,
-    });*/
-    /*let notesList4 = event.target.parentNode.parentNode.parentNode.state.notes;
-    let index = notesList4.indexOf({
-      title: event.target.parentNode.parentNode.state.title,
-      text: event.target.parentNode.parentNode.state.text
-    });
-    notesList4.splice(index, 1);
-    event.target.parentNode.parentNode.parentNode.setState({
-      notes: notesList4
-    })*/
+
     setTimeout(() => {
       event.target.parentNode.parentNode.style.display="none"
     }, 500);
@@ -76,46 +64,10 @@ class Note extends React.Component {
 }
 
 class NotesContainer extends React.Component {
-  
-  /*retrieveNotes = () => {
-    console.log("retrieving notes...");
-    let notesList4 = []
-    let initList =  [
-      {
-        title: "Note title",
-        text: "Text"
-      }
-    ]
-    if (localStorage.getItem('notesList4')) {
-      notesList4 = localStorage.getItem('notesList4');
-      if (notesList4.length===0) {
-        notesList4 = initList;
-      }
-    }
-    else {
-      notesList4 = initList;
-    }
-  }*/
    
   constructor(props) {
     super(props);
-    /*console.log("retrieving notes...");
-    let notesList4 = []
-    let initList =  [
-      {
-        title: "Note title",
-        text: "Text"
-      }
-    ]
-    if (localStorage.getItem('notesList4')) {
-      notesList4 = localStorage.getItem('notesList4');
-      if (notesList4.length===0) {
-        notesList4 = initList;
-      }
-    }
-    else {
-      notesList4 = initList;
-    }*/
+
     this.state = {
       notes : [
         {
@@ -126,25 +78,6 @@ class NotesContainer extends React.Component {
     }
   }
 
-  /*clean = () => {
-    let toBeDeleted = [];
-    let i =0;
-    let notes = this.state.notes;
-    for (i=0; i<notes.length; i++) {
-      if (notes[i].active==false) {
-        toBeDeleted.push((notes[i].title, notes[i].text));
-      }
-    }
-    for (i=0; i<toBeDeleted.length; i++) {
-      let curr = toBeDeleted[i];
-      let index = this.state.notes.indexOf({
-        title: curr[0],
-        text: curr[1],
-        active: false
-      })
-      this.state.notes.splice(index, 1);
-    }
-  }*/
 
   addNew = () => {
     let oldNotes = this.state.notes;
