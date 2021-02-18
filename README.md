@@ -1,6 +1,6 @@
-# Notes webpage
+# Notepad
 
-* This is an educational project of a notepad-like webpage
+* This is an educational project of a notepad-like app
 * It is an intro to React framework
 * Languages used: HTML, CSS, Javascript(React)
 - - -
