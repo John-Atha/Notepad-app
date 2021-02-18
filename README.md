@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Notes webpage
+
+* This is an educational project of a notepad-like webpage
+* It is an intro to React framework
+* Languages used: HTML, CSS, Javascript(React)
+- - -
+* Developer: Giannis Athanasiou
+* GitHub Username: John-Atha
+* Email: giannisj3@gmail.com
+
+- - -
+- - -
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
